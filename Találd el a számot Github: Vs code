@@ -1,0 +1,18 @@
+from random import randint
+pontszám = 0
+print('Találd el a számot')
+játék = True
+while játék:
+    szám = randint(1, 3)
+    print('Válassz egy számot')
+    tipp = input('1, 2 vagy 3?')
+    tipp_szám = int(tipp)
+    if tipp_szám == szám:
+        print('Eltaláltad')
+        pontszám = pontszám + 1
+    else:
+        print('Sajnos nem találtad el...')
+        játék = False
+print('A játéknak vége')
+print(' Az elért pontszám:', pontszám)
+print('Próbáld meg újra!')  
